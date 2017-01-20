@@ -2,6 +2,21 @@
 Cheatsheet for remote administration and work in conditions of complete uncertainty
 
 # Bash & SSH
+__tmux may help you to run a command and continue to work with bash via ssh__
+```
+tmux
+```
+__to deattach a session__
+
+`C-b` then `d`
+
+__to attach to a session__
+
+`tmux a -p #`
+
+__List of currently working sessions__
+
+`tmux ls`
 
 # Docker
 __Go inside container__
