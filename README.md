@@ -30,6 +30,14 @@ __Go inside container__
 docker exec -it %CONTAINER_NAME% /bin/bash
 ```
 
+__Check whether container is active or not (if active: then stop && rm)__
+```bash
+app="%CONTAINER_NAME_HERE%"
+if docker ps | awk -v app="app" 'NR>1{  ($(NF) == app )  }'; then
+    docker stop "$app" && docker rm -f "$app"
+fi
+```
+
 # PostgreSQL
 __Run Docker container with PostgreSQL inside external volume in ```/data/postgres``` (lately you can easily backup this folder)__
 ```bash
