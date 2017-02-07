@@ -60,3 +60,8 @@ __Show `postgres` size in pgsql__
 ```SQL
 SELECT pg_size_pretty(pg_database_size('postgres')) As fulldbsize;
 ```
+
+__Make PostgreSQL work not only with requests from any place__
+```bash
+echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/pg_hba.conf
+```
