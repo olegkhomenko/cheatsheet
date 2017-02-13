@@ -65,3 +65,9 @@ __Make PostgreSQL work not only with requests from any place__
 ```bash
 echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/pg_hba.conf
 ```
+# Zsh
+__Make oh-my-zsh work with you Anaconda (```source```, ```pip```, etc.)__
+```bash
+# User configuration
+PATH="$PATH:$HOME/anaconda/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+```
