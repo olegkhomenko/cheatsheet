@@ -1,4 +1,4 @@
-### TensorFlow
+### Keras with TensorFlow backend
 __Check for available GPUs__
 
 ```python
