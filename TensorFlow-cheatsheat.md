@@ -21,6 +21,7 @@ nvidia-smi -l 1
 ```
 
 __Save & Load ```model```__
+
 _Save_
 ```python
 # serialize model to JSON
