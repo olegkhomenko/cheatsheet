@@ -56,7 +56,7 @@ pg_dump -U %USERNAME% %DBNAME% | gzip -9 > /var/lib/postgresql/data/postgres.sql
 ```bash
 gunzip -c /data/postgresql/data/postgres.sql.gz | psql -U %USERNAME% %DBNAME%
 ```
-__Show `postgres` size in pgsql__
+__Show `postgres` database size in pgsql__
 ```SQL
 SELECT pg_size_pretty(pg_database_size('postgres')) As fulldbsize;
 ```
