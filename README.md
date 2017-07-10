@@ -2,6 +2,12 @@
 Cheatsheet for remote administration and work in conditions of complete uncertainty
 
 # Bash & SSH
+__Send command output to vim to edit / copy / search better__
+```
+cmd -params | vim -
+```
+
+
 __tmux may help you to run a command and continue to work with bash via ssh__
 ```
 tmux
